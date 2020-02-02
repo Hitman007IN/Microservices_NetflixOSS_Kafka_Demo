@@ -15,17 +15,21 @@ import com.example.user.service.UserService;
 public class UserController {
 
 	@Autowired
-	private UserService userService;
-	
-	@GetMapping(path = "/member")
-	public ResponseEntity<Iterable<User>> getAll() {
-	    Iterable<User> all = userService.findAll();
-	    return new ResponseEntity<>(all, HttpStatus.OK);
-	}
-	 
-	@PostMapping(path = "/member")
-	public ResponseEntity<User> register(@RequestBody User input) {
-	    User result = userService.registerUser(input);
-	    return new ResponseEntity<>(result, HttpStatus.OK);
-	}
+    private UserService userService;
+
+    @GetMapping(path = "/members")
+    public ResponseEntity<Iterable<User>> getAll() {
+
+        Iterable<User> all = userService.findAll();
+
+        return new ResponseEntity<>(all, HttpStatus.OK);
+    }
+
+    @PostMapping(path = "/register")
+    public ResponseEntity<User> register(@RequestBody User input) {
+
+        User result = userService.registerUser(input);
+
+        return new ResponseEntity<>(result, HttpStatus.OK);
+    }
 }

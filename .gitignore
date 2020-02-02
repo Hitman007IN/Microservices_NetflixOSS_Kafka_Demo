@@ -1,0 +1,16 @@
+
+MsEmailService/.mvn/wrapper/maven-wrapper.properties
+MsEmailService/.mvn/wrapper/MavenWrapperDownloader.java
+MsEmailService/.project
+MsEmailService/.settings/org.eclipse.jdt.core.prefs
+MsEmailService/.settings/org.eclipse.m2e.core.prefs
+MsEmailService/.settings/org.eclipse.wst.common.project.facet.core.xml
+MsEmailService/HELP.md
+MsEmailService/mvnw
+MsEmailService/mvnw.cmd
+MsUserService/.mvn/wrapper/maven-wrapper.jar
+MsUserService/.mvn/wrapper/maven-wrapper.properties
+MsUserService/.mvn/wrapper/maven-wrapper.jar
+MsUserService/.mvn/wrapper/MavenWrapperDownloader.java
+MsUserService/mvnw
+MsUserService/mvnw.cmd

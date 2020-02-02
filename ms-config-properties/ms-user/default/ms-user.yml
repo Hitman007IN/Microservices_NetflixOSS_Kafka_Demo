@@ -1,4 +1,8 @@
 spring:
+  kafka:
+    bootstrap-servers: localhost:9092
+    topic:
+      userCreated: USER_CREATED_TOPIC
   h2:
     console:
       enabled: true
@@ -7,10 +11,7 @@ spring:
     url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
     username: sa
     password:
-  kafka:
-    bootstrap-servers: localhost:9092
-    topic:
-      userCreated: USER_CREATED_TOPIC
+  
 security:
   basic:
     enabled: false

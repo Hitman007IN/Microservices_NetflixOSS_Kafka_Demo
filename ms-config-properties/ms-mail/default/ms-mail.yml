@@ -2,6 +2,9 @@ spring:
   kafka:
     consumer:
       group-id: ms_mail_consumer
+    bootstrap-servers: localhost:9092
+    topic:
+      userCreated: USER_CREATED_TOPIC
   h2:
     console:
       enabled: true
@@ -13,8 +16,8 @@ spring:
   mail:
     host: smtp.gmail.com
     port: 587
-    username: YOUR_GMAIL_USERNAME
-    password: YOUR_GMAIL_PASSWORD
+    username: vishakh.km.94@gmail.com
+    password: appu@7B7ADDB5
     properties.mail.smtp:
       auth: true
       starttls.enable: true

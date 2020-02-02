@@ -14,14 +14,11 @@ public class UserServiceImpl implements UserService {
     @Value("${spring.kafka.topic.userCreated}")
     private String USER_CREATED_TOPIC;
 
-    private UserRepository userRepository;
-    private Sender sender;
-
     @Autowired
-    UserServiceImpl(UserRepository userRepository, Sender sender) {
-        this.userRepository = userRepository;
-        this.sender = sender;
-    }
+    private UserRepository userRepository;
+    
+    @Autowired
+    private Sender sender;
 
     @Override
     public User registerUser(User input) {
