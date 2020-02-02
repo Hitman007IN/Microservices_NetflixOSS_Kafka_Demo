@@ -18,3 +18,6 @@ sh bin/kafka-server-start.sh config/server.properties
 
 - Step 5:- Verify Kafka is running
 $ echo dump | nc localhost 2181 | grep brokers
+
+
+Reference :- https://dreamix.eu/blog/java/building-microservices-with-netflix-oss-apache-kafka-and-spring-boot
